@@ -1,10 +1,18 @@
 sudo: false
 language: node_js
-node_js:  
-  - '8'
+services:
+- redis-server
+node_js:
+- '8'
 install:
-  - npm i npminstall && npminstall
+- npm i npminstall && npminstall
 script:
-  - npm run ci
+- npm run ci
 after_script:
-  - npminstall codecov && codecov
+- npminstall codecov && codecov
+env:
+  global:
+  # WECHAT_API_APP_ID
+  - secure: V/eQAaNWHxx2rJ/pLxJgFqB1K1RuzaoxPmidwLuD2Bnmg1DLJbOjYv126st4qCXyJgntppzzT4CA6F1HeSLzMYgDQJ7uOcLo8c9dpAtKUc55ZSYjfLZTn70WADC4ZBPcRpStDvRW91wFtC+MoMrrol2+p71wA1n3Y3belBC8Ios2KPIEDmhovk0TlGVOkiYEvuLSPNXUrSUeeJx+8NXGYUihmdBX4deCXRPz08YhPEVoTx8KPMRSnplso56XFIDj/RBbJ/GcGWEiEa7cUc+MRd06YUAnuvWEtO8o41BWgcLMBDPqbbkgo3Vob0gCmrk28P78osR/8kRCiZ9gUAXjSYKZq94Yej0QGtNnOrhlddtVsiep2AtAa+trOY63cfTAdUeSDxJZbtO8/+p/dgH+Mk0Y6Qak9KKgUMfbTaOTwD2/bZpKRT32CULNa1R3NRpto2LUcQCtelqVCDT+xAIRQIXYUh4P1Mxy8bgqNXCUTF0VDcQN4Rw9J9ozztucnL720ddTJ8swHI7KmSjNQp+DjA9xWmXBwk8Tf+/bJbh0v0XPTxHJpiSdrCsEJCqoDuoFRdecfuwk3QQtSUnlaabClMnD6Gaxnu4VphSrrpsR+jzF6mtd1vet9FVqiCQKcJ0PbtrgCEHZJt92Df4ekmzjcT8BDRJtFTZmLbU39R1Bd8Y=
+  # WECHAT_API_APP_SECRET
+  - secure: L1zBUlb8TOwI4jgYKaGnMQ91cKFCpl5MPu0HTMP23CaxUgI4dVrTo0CWUUte6sGMJ8s3cXYb2N7HztF/TzlyPkmMURnIlAbgGrYeLucK48b1GxyLSACvCqVLlU9avS1c8YH6e6cBQCF/1lK4LsV4LIV7VCH4gyOJdSFAi6mNIVBdWAgALXtrJeWH0dN/XMaRz/Lngk1oI6fcm0R7bjTFo5bjoNovx+oDulPtHzQfQX8fuIIoK9UeibOgjsGr/bLiDmK5H3SWKa0I757NLD5XH36ven0CYdEOygtE49OspUbSEwcwF7Oki3bxydRNgft1A89AvXpf3qK/axkvDUb/mpjYiSyik9fdV8MPqAbYmLfDofvFv68SeudsDQ8Faip8kYezN33pL8GntTGst8WjmyXvYCTneKL/yXttyWEpINHm0uBHau1Q9ZTpr9Y00smGWzCX3/PKKhjuWIFQ3LbdXV0B2QcaBNbtf4LXkHc7Nj7JsgQbAWIWUfc49X5aC4DFg5y9bYBS6H0Ww5uqj3Wyfm8f6vpSZlThUBhSH2IykZXRMph30H9dnyTrOnM4h49WoJXwq3ajcuvChySBxrusDxhmDrkjJpWSYZzxlnyq4785EPh5URr8cUpjhg+XhoSCDw04B98KU79I4r3Mk+XkTMUgvpl8VeKQRbRoW7WZhyY=
