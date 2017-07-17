@@ -61,6 +61,8 @@ exports.wechatApi = {
 };
 ```
 
+> __Redis is required !__
+
 see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
