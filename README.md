@@ -32,6 +32,10 @@ egg plugin for [wechat-api](https://github.com/node-webot/co-wechat-api)
 $ npm i egg-wechat-api --save
 ```
 
+## Prerequisite
+
+Node.js >= 7.x
+
 ## Usage
 
 - [co-wechat-api](https://github.com/node-webot/co-wechat-api)
