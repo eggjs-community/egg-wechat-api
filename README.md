@@ -43,7 +43,7 @@ Node.js >= 7.x
 ## Dependencies
 
 - egg
-	- [egg-redis](github.com/eggjs/egg-redis)
+	- [egg-redis](https://github.com/eggjs/egg-redis)
 - other
 	- [co-wechat-api](https://github.com/node-webot/co-wechat-api)
 
