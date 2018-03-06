@@ -52,12 +52,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-wechat-api.git"
+    "url": "git+https://github.com/eggjs-community/egg-wechat-api.git"
   },
   "bugs": {
     "url": "https://github.com/eggjs/egg/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-wechat-api#readme",
+  "homepage": "https://github.com/eggjs-community/egg-wechat-api#readme",
   "author": "thonatos",
   "license": "MIT"
 }

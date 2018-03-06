@@ -9,12 +9,12 @@
 
 [npm-image]: https://img.shields.io/npm/v/egg-wechat-api.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/egg-wechat-api
-[travis-image]: https://img.shields.io/travis/thonatos/egg-wechat-api.svg?style=flat-square
-[travis-url]: https://travis-ci.org/thonatos/egg-wechat-api
-[codecov-image]: https://img.shields.io/codecov/c/github/thonatos/egg-wechat-api.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/thonatos/egg-wechat-api?branch=master
-[david-image]: https://img.shields.io/david/thonatos/egg-wechat-api.svg?style=flat-square
-[david-url]: https://david-dm.org/thonatos/egg-wechat-api
+[travis-image]: https://img.shields.io/travis/eggjs-community/egg-wechat-api.svg?style=flat-square
+[travis-url]: https://travis-ci.org/eggjs-community/egg-wechat-api
+[codecov-image]: https://img.shields.io/codecov/c/github/eggjs-community/egg-wechat-api.svg?style=flat-square
+[codecov-url]: https://codecov.io/github/eggjs-community/egg-wechat-api?branch=master
+[david-image]: https://img.shields.io/david/eggjs-community/egg-wechat-api.svg?style=flat-square
+[david-url]: https://david-dm.org/eggjs-community/egg-wechat-api
 [snyk-image]: https://snyk.io/test/npm/egg-wechat-api/badge.svg?style=flat-square
 [snyk-url]: https://snyk.io/test/npm/egg-wechat-api
 [download-image]: https://img.shields.io/npm/dm/egg-wechat-api.svg?style=flat-square
