@@ -18,7 +18,7 @@
     "egg-redis": "1.0.2"
   },
   "devDependencies": {
-    "autod": "2.10.1",
+    "autod": "3.0.1",
     "autod-egg": "1.1.0",
     "egg": "1.13.1",
     "egg-bin": "3.7.0",
