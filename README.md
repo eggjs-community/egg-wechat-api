@@ -56,12 +56,23 @@ exports.wechatApi = {
   package: 'egg-wechat-api',
 };
 ```
+> if redis is single client
 
 ```js
 // {app_root}/config/config.default.js
 exports.wechatApi = {  
   appId: '',
   appSecret: '',
+};
+```
+> if redis is multi clients
+
+```js
+// {app_root}/config/config.default.js
+exports.wechatApi = {
+  appId: '',
+  appSecret: '',
+  redisInstance: '', // select instance of redis
 };
 ```
 

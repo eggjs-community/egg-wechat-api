@@ -3,11 +3,11 @@
 const request = require('supertest');
 const mm = require('egg-mock');
 
-describe('test/wechat-api.test.js', () => {
+describe('test/wechat-api-redis-multi-clients.test.js', () => {
   let app;
   before(() => {
     app = mm.app({
-      baseDir: 'apps/wechat-api-test',
+      baseDir: 'apps/wechat-api-test-redis-multi-clients',
     });
 
     return app.ready();
