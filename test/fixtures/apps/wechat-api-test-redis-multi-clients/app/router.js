@@ -2,11 +2,11 @@
 
 module.exports = app => {
 
-  app.get('/', function* () {
+  app.get('/', async function() {
     const { wechatApi } = app;
 
     try {
-      const ticket = yield wechatApi.getTicket();
+      const ticket = await wechatApi.getTicket();
       this.status = 200;
       this.body = ticket;
 

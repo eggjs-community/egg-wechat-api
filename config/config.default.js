@@ -14,5 +14,8 @@ exports.wechatApi = {
   // wechat
   appId: '',
   appSecret: '',
+
+  // adapter
+  adapter: 'redis',
   redisInstance: '',
 };

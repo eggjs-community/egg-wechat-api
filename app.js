@@ -1,7 +1,9 @@
 'use strict';
 
-const wechatApi = require('./lib/wechat-api');
+const assert = require('assert');
 
 module.exports = app => {
-  wechatApi(app);
+  const { appId, appSecret } = app.config.wechatApi || {};
+  assert(appId && appSecret,
+    '[egg-wechat-api] Must set `appId` and `appSecret` and in wechat-api\'s config');
 };

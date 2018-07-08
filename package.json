@@ -14,19 +14,19 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "co-wechat-api": "^3.5.0",
-    "egg-redis": "^1.0.2"
+    "co-wechat-api": "^3.7.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.1.0",
-    "egg": "^1.13.1",
-    "egg-bin": "^3.7.0",
+    "egg": "^2.9.1",
+    "egg-bin": "^4.7.1",
     "egg-ci": "^1.8.0",
-    "egg-mock": "^3.17.0",
-    "eslint": "^3.19.0",
-    "eslint-config-egg": "^4.2.1",
-    "supertest": "^3.0.0",
+    "egg-mock": "^3.17.2",
+    "egg-redis": "^2.0.0",
+    "eslint": "^5.0.1",
+    "eslint-config-egg": "^7.0.0",
+    "supertest": "^3.1.0",
     "webstorm-disable-index": "^1.2.0"
   },
   "engines": {
@@ -42,9 +42,8 @@
     "autod": "autod"
   },
   "files": [
+    "app",
     "config",
-    "agent.js",
-    "lib",
     "app.js"
   ],
   "ci": {

@@ -14,7 +14,7 @@ exports.redis = {
       port: 6380,
       host: '127.0.0.1',
       password: null,
-      db: 1,
+      db: 0,
     },
   },
 };
