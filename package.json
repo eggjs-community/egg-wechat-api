@@ -1,11 +1,10 @@
 {
   "name": "egg-wechat-api",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "wechat-api for egg",
   "eggPlugin": {
     "name": "wechatApi",
-    "dependencies": [
-    ]
+    "dependencies": []
   },
   "keywords": [
     "egg",
