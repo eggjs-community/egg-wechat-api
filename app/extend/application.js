@@ -15,7 +15,10 @@ module.exports = {
 
 function createClient(app) {
   const config = app.config.wechatApi;
-  const { appId, appSecret } = config;
+  const {
+    appId,
+    appSecret
+  } = config;
 
   if (!appId || !appSecret) {
     app.logger.error('[egg-wechat-api] must set `appId` and `appSecret` in plugin\'s config.');
@@ -38,7 +41,7 @@ function createClient(app) {
 
   async function getTicketToken(type) {
     const raw = await adapter.get(`wechat_${type}`);
-    return JSON.parse(raw);
+    return JSON.parse(config.adapter === 'tair' ? raw.data : raw);
   }
 
   async function saveTicketToken(type, _ticketToken) {
@@ -47,7 +50,7 @@ function createClient(app) {
 
   async function getAccessToken() {
     const token = await adapter.get('wechat_access_token');
-    return JSON.parse(token);
+    return JSON.parse(config.adapter === 'tair' ? token.data : token);
   }
 
   async function saveAccessToken(token) {
