@@ -5,7 +5,6 @@
   "eggPlugin": {
     "name": "wechatApi",
     "dependencies": [
-      "redis"
     ]
   },
   "keywords": [
